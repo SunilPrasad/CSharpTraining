@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using static System.Console;
 namespace NestedTypeExample
 {
     class Program
@@ -27,7 +27,7 @@ namespace NestedTypeExample
         public class Nested
         {
             private Container parent;
-            
+
             public Nested(Container parent)
             {
                 this.parent = parent;
@@ -35,4 +35,6 @@ namespace NestedTypeExample
             }
         }
     }
+
+
 }

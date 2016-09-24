@@ -1,0 +1,7 @@
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StrongNameAssembly\bin\Debug\StrongNameAssembly.dll
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StrongNameAssembly\bin\Debug\StrongNameAssembly.pdb
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StrongNameAssembly\obj\Debug\StrongNameAssembly.dll
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StrongNameAssembly\obj\Debug\StrongNameAssembly.pdb
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StrongNameAssembly\bin\Debug\NonStrongNameAssembly.dll
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StrongNameAssembly\bin\Debug\NonStrongNameAssembly.pdb
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StrongNameAssembly\obj\Debug\StrongNameAssembly.csprojResolveAssemblyReference.cache

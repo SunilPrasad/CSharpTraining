@@ -34,13 +34,14 @@ namespace EnumExample
         static void Main()
         {
             MultiHue redGreen = MultiHue.Red | MultiHue.Green;
-            
+            redGreen = redGreen | MultiHue.Black;
+
             SingleHue singleHue = SingleHue.Red | SingleHue.Green;
 
             Console.WriteLine(singleHue);
 
             Console.WriteLine(redGreen);
-            
+
         }
 
         public static void PrintAllPossibleValuesOFEnum()
