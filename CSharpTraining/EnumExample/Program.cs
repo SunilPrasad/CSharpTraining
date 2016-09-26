@@ -33,14 +33,26 @@ namespace EnumExample
 
         static void Main()
         {
-            MultiHue redGreen = MultiHue.Red | MultiHue.Green;
-            redGreen = redGreen | MultiHue.Black;
+            //MultiHue redGreen = MultiHue.Red | MultiHue.Green;
 
-            SingleHue singleHue = SingleHue.Red | SingleHue.Green;
 
-            Console.WriteLine(singleHue);
+            //if ((redGreen & MultiHue.Black) == 0)
+            //{
+            //    Console.WriteLine("Black");
+            //}
+            //else
+            //{
+            //    // None of them are enabled
+            //}
 
-            Console.WriteLine(redGreen);
+            //SingleHue singleHue = SingleHue.Red | SingleHue.Green;
+
+            //Console.WriteLine(singleHue);
+
+            //Console.WriteLine(redGreen);
+
+
+            PrintAllPossibleValuesOFEnum();
 
         }
 

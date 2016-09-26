@@ -1,0 +1,5 @@
+D:\MyWorkspace\CSharpTraining\CSharpTraining\CodeAccessSecurityC\bin\Debug\CodeAccessSecurityC.exe.config
+D:\MyWorkspace\CSharpTraining\CSharpTraining\CodeAccessSecurityC\bin\Debug\CodeAccessSecurityC.exe
+D:\MyWorkspace\CSharpTraining\CSharpTraining\CodeAccessSecurityC\bin\Debug\CodeAccessSecurityC.pdb
+D:\MyWorkspace\CSharpTraining\CSharpTraining\CodeAccessSecurityC\obj\Debug\CodeAccessSecurityC.exe
+D:\MyWorkspace\CSharpTraining\CSharpTraining\CodeAccessSecurityC\obj\Debug\CodeAccessSecurityC.pdb

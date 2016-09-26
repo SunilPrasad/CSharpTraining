@@ -1,0 +1,5 @@
+D:\MyWorkspace\CSharpTraining\CSharpTraining\DelaySignedAssembly\bin\Debug\DelaySignedAssembly.exe.config
+D:\MyWorkspace\CSharpTraining\CSharpTraining\DelaySignedAssembly\bin\Debug\DelaySignedAssembly.exe
+D:\MyWorkspace\CSharpTraining\CSharpTraining\DelaySignedAssembly\bin\Debug\DelaySignedAssembly.pdb
+D:\MyWorkspace\CSharpTraining\CSharpTraining\DelaySignedAssembly\obj\Debug\DelaySignedAssembly.exe
+D:\MyWorkspace\CSharpTraining\CSharpTraining\DelaySignedAssembly\obj\Debug\DelaySignedAssembly.pdb

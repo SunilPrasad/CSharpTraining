@@ -13,13 +13,27 @@ namespace StrongNameAssembly
         public void CalculatePersonalLoan()
         {
             bool a = true;
-            bool c = a ? false : true;
+            bool c = a ? true : false;
+
             Console.WriteLine("Hello World!!");
+            
+
             Console.WriteLine(c);
 
-            NonStrongNameAssembly.LibrarySrvice lib = new LibrarySrvice();
-            Console.WriteLine(lib.GetBook());
+            //NonStrongNameAssembly.LibrarySrvice lib = new LibrarySrvice();
+            //Console.WriteLine(lib.GetBook());
+
+        }
+    }
+
+    public class SecondClass
+    {
+        public SecondClass()
+        {
+            LoanCalculatorService loanCal = new LoanCalculatorService();
             
         }
+
+        
     }
 }

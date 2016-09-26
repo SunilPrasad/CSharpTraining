@@ -1,0 +1,3 @@
+D:\MyWorkspace\CSharpTraining\CSharpTraining\VBConsoleApplication\obj\Debug\VBConsoleApplication.vbprojResolveAssemblyReference.cache
+D:\MyWorkspace\CSharpTraining\CSharpTraining\VBConsoleApplication\obj\Debug\VBConsoleApplication.Resources.resources
+D:\MyWorkspace\CSharpTraining\CSharpTraining\VBConsoleApplication\obj\Debug\VBConsoleApplication.vbproj.GenerateResource.Cache

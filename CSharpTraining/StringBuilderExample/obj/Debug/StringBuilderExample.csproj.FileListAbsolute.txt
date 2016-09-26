@@ -1,0 +1,5 @@
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StringBuilderExample\bin\Debug\StringBuilderExample.exe.config
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StringBuilderExample\bin\Debug\StringBuilderExample.exe
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StringBuilderExample\bin\Debug\StringBuilderExample.pdb
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StringBuilderExample\obj\Debug\StringBuilderExample.exe
+D:\MyWorkspace\CSharpTraining\CSharpTraining\StringBuilderExample\obj\Debug\StringBuilderExample.pdb
