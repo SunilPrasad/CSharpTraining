@@ -1,5 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\CLSExample\bin\Debug\CLSExample.dll
-D:\MyWorkspace\CSharpTraining\CSharpTraining\CLSExample\bin\Debug\CLSExample.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\CLSExample\obj\Debug\CLSExample.csprojResolveAssemblyReference.cache
-D:\MyWorkspace\CSharpTraining\CSharpTraining\CLSExample\obj\Debug\CLSExample.dll
-D:\MyWorkspace\CSharpTraining\CSharpTraining\CLSExample\obj\Debug\CLSExample.pdb

@@ -1,6 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StaticConstructorException\bin\Debug\StaticConstructorException.exe.config
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StaticConstructorException\bin\Debug\StaticConstructorException.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StaticConstructorException\bin\Debug\StaticConstructorException.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StaticConstructorException\obj\Debug\StaticConstructorException.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StaticConstructorException\obj\Debug\StaticConstructorException.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StaticConstructorException\obj\Debug\StaticConstructorException.csprojResolveAssemblyReference.cache

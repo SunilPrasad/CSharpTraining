@@ -10,6 +10,19 @@ namespace StringBuilderCapacityExample
     {
         public static void Main()
         {
+
+            string str = "Hello";
+            string str2 = "Hello";
+
+            bool isStringEqual = str.Equals(str2);
+            bool isStringReferenceEquals = object.ReferenceEquals(str, str2);
+
+            Console.WriteLine(isStringEqual);
+            Console.WriteLine(isStringReferenceEquals);
+
+
+            Console.ReadLine();
+
             StringBuilder sb = new StringBuilder();
             ShowSBInfo(sb);
             sb.Append("This is a sentence.");

@@ -1,1 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\MemberwiseCloneExample\bin\Debug\MemberwiseCloneExample.exe.config

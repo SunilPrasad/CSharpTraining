@@ -1,6 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StructExample\bin\Debug\StructExample.exe.config
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StructExample\bin\Debug\StructExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StructExample\bin\Debug\StructExample.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StructExample\obj\Debug\StructExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StructExample\obj\Debug\StructExample.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StructExample\obj\Debug\StructExample.csprojResolveAssemblyReference.cache

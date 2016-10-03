@@ -1,6 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringExample\bin\Debug\StringExample.exe.config
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringExample\bin\Debug\StringExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringExample\bin\Debug\StringExample.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringExample\obj\Debug\StringExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringExample\obj\Debug\StringExample.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringExample\obj\Debug\StringExample.csprojResolveAssemblyReference.cache

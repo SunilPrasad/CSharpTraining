@@ -1,6 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\AdvanceCalculator\bin\Debug\AdvanceCalculator.exe.config
-D:\MyWorkspace\CSharpTraining\CSharpTraining\AdvanceCalculator\bin\Debug\AdvanceCalculator.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\AdvanceCalculator\bin\Debug\AdvanceCalculator.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\AdvanceCalculator\obj\Debug\AdvanceCalculator.csprojResolveAssemblyReference.cache
-D:\MyWorkspace\CSharpTraining\CSharpTraining\AdvanceCalculator\obj\Debug\AdvanceCalculator.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\AdvanceCalculator\obj\Debug\AdvanceCalculator.pdb

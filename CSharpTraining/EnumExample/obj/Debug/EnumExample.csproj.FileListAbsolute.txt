@@ -1,6 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EnumExample\bin\Debug\EnumExample.exe.config
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EnumExample\bin\Debug\EnumExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EnumExample\bin\Debug\EnumExample.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EnumExample\obj\Debug\EnumExample.csprojResolveAssemblyReference.cache
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EnumExample\obj\Debug\EnumExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EnumExample\obj\Debug\EnumExample.pdb

@@ -1,5 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StaticExamples\bin\Debug\StaticExamples.exe.config
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StaticExamples\bin\Debug\StaticExamples.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StaticExamples\bin\Debug\StaticExamples.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StaticExamples\obj\Debug\StaticExamples.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StaticExamples\obj\Debug\StaticExamples.pdb

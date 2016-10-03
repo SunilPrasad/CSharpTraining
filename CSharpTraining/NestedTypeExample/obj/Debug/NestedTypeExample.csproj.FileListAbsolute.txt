@@ -1,6 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\NestedTypeExample\bin\Debug\NestedTypeExample.exe.config
-D:\MyWorkspace\CSharpTraining\CSharpTraining\NestedTypeExample\bin\Debug\NestedTypeExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\NestedTypeExample\bin\Debug\NestedTypeExample.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\NestedTypeExample\obj\Debug\NestedTypeExample.csprojResolveAssemblyReference.cache
-D:\MyWorkspace\CSharpTraining\CSharpTraining\NestedTypeExample\obj\Debug\NestedTypeExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\NestedTypeExample\obj\Debug\NestedTypeExample.pdb

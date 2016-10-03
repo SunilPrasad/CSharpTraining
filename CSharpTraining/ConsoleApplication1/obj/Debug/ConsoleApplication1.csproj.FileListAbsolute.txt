@@ -1,6 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

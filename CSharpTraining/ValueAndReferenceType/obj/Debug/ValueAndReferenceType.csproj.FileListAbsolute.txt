@@ -1,6 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ValueAndReferenceType\bin\Debug\ValueAndReferenceType.exe.config
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ValueAndReferenceType\bin\Debug\ValueAndReferenceType.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ValueAndReferenceType\bin\Debug\ValueAndReferenceType.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ValueAndReferenceType\obj\Debug\ValueAndReferenceType.csprojResolveAssemblyReference.cache
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ValueAndReferenceType\obj\Debug\ValueAndReferenceType.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\ValueAndReferenceType\obj\Debug\ValueAndReferenceType.pdb

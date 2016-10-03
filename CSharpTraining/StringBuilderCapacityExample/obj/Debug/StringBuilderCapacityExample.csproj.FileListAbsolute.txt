@@ -1,6 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringBuilderCapacityExample\bin\Debug\StringBuilderCapacityExample.exe.config
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringBuilderCapacityExample\bin\Debug\StringBuilderCapacityExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringBuilderCapacityExample\bin\Debug\StringBuilderCapacityExample.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringBuilderCapacityExample\obj\Debug\StringBuilderCapacityExample.csprojResolveAssemblyReference.cache
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringBuilderCapacityExample\obj\Debug\StringBuilderCapacityExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\StringBuilderCapacityExample\obj\Debug\StringBuilderCapacityExample.pdb

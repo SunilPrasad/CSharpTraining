@@ -1,4 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\NonStrongNameAssembly\bin\Debug\NonStrongNameAssembly.dll
-D:\MyWorkspace\CSharpTraining\CSharpTraining\NonStrongNameAssembly\bin\Debug\NonStrongNameAssembly.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\NonStrongNameAssembly\obj\Debug\NonStrongNameAssembly.dll
-D:\MyWorkspace\CSharpTraining\CSharpTraining\NonStrongNameAssembly\obj\Debug\NonStrongNameAssembly.pdb

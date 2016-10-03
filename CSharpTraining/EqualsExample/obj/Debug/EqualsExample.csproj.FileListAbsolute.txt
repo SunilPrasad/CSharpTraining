@@ -1,6 +1,0 @@
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EqualsExample\bin\Debug\EqualsExample.exe.config
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EqualsExample\bin\Debug\EqualsExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EqualsExample\bin\Debug\EqualsExample.pdb
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EqualsExample\obj\Debug\EqualsExample.csprojResolveAssemblyReference.cache
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EqualsExample\obj\Debug\EqualsExample.exe
-D:\MyWorkspace\CSharpTraining\CSharpTraining\EqualsExample\obj\Debug\EqualsExample.pdb
