@@ -11,6 +11,7 @@ namespace NestedTypeExample
         static void Main(string[] args)
         {
             Container container = new Container("Name");
+            Container.Nested nestedClass = new Container.Nested(container);
 
         }
     }
@@ -35,6 +36,4 @@ namespace NestedTypeExample
             }
         }
     }
-
-
 }

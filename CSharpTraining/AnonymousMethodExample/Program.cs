@@ -68,5 +68,17 @@ namespace AnonymousMethodExample
                 Console.WriteLine(val);
             }
         }
+
+        static void ExampleOne()
+        {
+            Func<int, bool> myFunc = x => x == 5;
+
+            Action<int> myAction = x => { bool a = x == 5; };
+
+            Func<int, bool> myFuncOne = delegate(int x) { return x==5; };
+
+            bool result = myFunc(4);
+
+        }
     }
 }

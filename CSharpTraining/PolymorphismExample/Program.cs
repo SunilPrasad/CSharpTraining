@@ -16,8 +16,7 @@ namespace PolymorphismExample
 
         // Virtual method
         public virtual void Draw()
-        {
-            int[,] ar= new int[10,20];
+        {            
             Console.WriteLine("Performing base class drawing tasks");
         }
     }
@@ -75,5 +74,27 @@ namespace PolymorphismExample
             Console.ReadKey();
         }
 
+    }
+
+
+    public abstract class A
+    {
+        public virtual void Draw() { }
+        public abstract void test();
+        
+    }
+
+    public abstract class B : A
+    {
+        public override sealed void Draw() { }       
+       
+    }
+
+    public class C : B
+    {
+        public void Draw()
+        {
+            
+        }
     }
 }
