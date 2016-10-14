@@ -117,6 +117,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventExample", "EventExampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateNumberExample", "DelegateNumberExample\DelegateNumberExample.csproj", "{A14B452B-D465-4175-A4AE-5BF2938163FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEqualityComparer Example", "IEqualityComparer Example\IEqualityComparer Example.csproj", "{038EC458-4F4E-4784-A0CE-BAE4DCA01A66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionUtilExample", "CollectionUtilExample\CollectionUtilExample.csproj", "{B639FA33-710B-41DD-95BF-FDF9D160A3A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -317,6 +321,14 @@ Global
 		{A14B452B-D465-4175-A4AE-5BF2938163FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A14B452B-D465-4175-A4AE-5BF2938163FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A14B452B-D465-4175-A4AE-5BF2938163FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038EC458-4F4E-4784-A0CE-BAE4DCA01A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038EC458-4F4E-4784-A0CE-BAE4DCA01A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038EC458-4F4E-4784-A0CE-BAE4DCA01A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038EC458-4F4E-4784-A0CE-BAE4DCA01A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B639FA33-710B-41DD-95BF-FDF9D160A3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B639FA33-710B-41DD-95BF-FDF9D160A3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B639FA33-710B-41DD-95BF-FDF9D160A3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B639FA33-710B-41DD-95BF-FDF9D160A3A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -369,5 +381,7 @@ Global
 		{43A0ADDA-7A8A-4FC8-AEF5-90318E795F83} = {19C1F144-2058-4D8F-9941-ADBFB6DC4123}
 		{A49C1CB8-1FA9-4CD8-BEAA-225829E92973} = {19C1F144-2058-4D8F-9941-ADBFB6DC4123}
 		{A14B452B-D465-4175-A4AE-5BF2938163FF} = {19C1F144-2058-4D8F-9941-ADBFB6DC4123}
+		{038EC458-4F4E-4784-A0CE-BAE4DCA01A66} = {E773D624-4EDC-4308-A35C-B428C98BE160}
+		{B639FA33-710B-41DD-95BF-FDF9D160A3A5} = {E773D624-4EDC-4308-A35C-B428C98BE160}
 	EndGlobalSection
 EndGlobal

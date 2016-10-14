@@ -13,7 +13,7 @@ namespace ListVsHashSetPerformanceComp
         {
             int times = 10000000;
 
-
+           
             for (int listSize = 1; listSize < 10; listSize++)
             {
                 List<string> list = new List<string>();
