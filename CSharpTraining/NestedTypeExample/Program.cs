@@ -23,7 +23,7 @@ namespace NestedTypeExample
         public Container(string name)
         {
             _name = name;
-            new Nested(this);
+            new Nested(this);            
         }
         public class Nested
         {

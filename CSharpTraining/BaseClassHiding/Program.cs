@@ -30,7 +30,9 @@ namespace BaseClassHiding
             // Display the hidden value of x: 
             Console.WriteLine(BaseC.x);
             // Display the unhidden member y: 
-            //Console.WriteLine(y);
+            // Console.WriteLine(y);
+
+            
         }
 
         public new static void y()

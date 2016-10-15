@@ -49,15 +49,4 @@ namespace DelegateExampleOne
             d("D");
         }
     }
-    /* Output:
-    Invoking delegate a:
-      Hello, A!
-    Invoking delegate b:
-      Goodbye, B!
-    Invoking delegate c:
-      Hello, C!
-      Goodbye, C!
-    Invoking delegate d:
-      Goodbye, D!
-    */
 }

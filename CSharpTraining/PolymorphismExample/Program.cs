@@ -41,7 +41,7 @@ namespace PolymorphismExample
     }
     class Triangle : Shape
     {
-        public override void Draw()
+        public void Draw()
         {
             // Code to draw a triangle...
             Console.WriteLine("Drawing a triangle");
@@ -90,11 +90,11 @@ namespace PolymorphismExample
        
     }
 
-    public class C : B
-    {
-        public void Draw()
-        {
+    //public class C : B
+    //{
+    //    public void Draw()
+    //    {
             
-        }
-    }
+    //    }
+    //}
 }

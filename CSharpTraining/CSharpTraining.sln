@@ -107,7 +107,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoinExample", "JoinExample\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VarExample", "VarExample\VarExample.csproj", "{E1C0921B-84ED-4FA0-BBAF-891C07598CCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateExample", "DelegateExample\DelegateExample.csproj", "{4DC7EAF3-3038-49FF-A79A-CB8B90E1DAE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapturingMultipleMethodReturnDelegateExample", "DelegateExample\CapturingMultipleMethodReturnDelegateExample.csproj", "{4DC7EAF3-3038-49FF-A79A-CB8B90E1DAE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateExampleOne", "DelegateExampleOne\DelegateExampleOne.csproj", "{2475840D-BE8E-46BF-9420-F95B54A63216}"
 EndProject
@@ -120,6 +120,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEqualityComparer Example", "IEqualityComparer Example\IEqualityComparer Example.csproj", "{038EC458-4F4E-4784-A0CE-BAE4DCA01A66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionUtilExample", "CollectionUtilExample\CollectionUtilExample.csproj", "{B639FA33-710B-41DD-95BF-FDF9D160A3A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateSyntax", "DelegateSyntax\DelegateSyntax.csproj", "{C3E8855E-D142-44A8-80FD-59F3DD61A668}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -329,6 +331,10 @@ Global
 		{B639FA33-710B-41DD-95BF-FDF9D160A3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B639FA33-710B-41DD-95BF-FDF9D160A3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B639FA33-710B-41DD-95BF-FDF9D160A3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E8855E-D142-44A8-80FD-59F3DD61A668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E8855E-D142-44A8-80FD-59F3DD61A668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E8855E-D142-44A8-80FD-59F3DD61A668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E8855E-D142-44A8-80FD-59F3DD61A668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -383,5 +389,6 @@ Global
 		{A14B452B-D465-4175-A4AE-5BF2938163FF} = {19C1F144-2058-4D8F-9941-ADBFB6DC4123}
 		{038EC458-4F4E-4784-A0CE-BAE4DCA01A66} = {E773D624-4EDC-4308-A35C-B428C98BE160}
 		{B639FA33-710B-41DD-95BF-FDF9D160A3A5} = {E773D624-4EDC-4308-A35C-B428C98BE160}
+		{C3E8855E-D142-44A8-80FD-59F3DD61A668} = {19C1F144-2058-4D8F-9941-ADBFB6DC4123}
 	EndGlobalSection
 EndGlobal
