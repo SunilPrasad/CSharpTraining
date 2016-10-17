@@ -9,7 +9,9 @@ namespace DelegateNumberExample
     class Program
     {
         public delegate bool Filter(int numbers);
+
         public static bool GreaterThanFive(int n) { return n > 5; }
+
         public static bool EvenNumber(int n) { if (n%2 == 0) return true; return false; }
 
         static void Main(string[] args)

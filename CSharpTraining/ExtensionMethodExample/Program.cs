@@ -12,6 +12,10 @@ namespace ExtensionMethodExample
         {
             string str = "hello";
 
+            str.ToLower();
+
+            
+
             string reversedCaseString = str.RevCase();
 
             Console.WriteLine(reversedCaseString);

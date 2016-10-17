@@ -14,15 +14,36 @@ namespace ImplicitAndExplicitInterfcaeImplementation
             SimpleType st = new SimpleType();
             // This calls the public Dispose method implementation
             st.Dispose();
+
             // This calls IDisposable's Dispose method implementation
             IDisposable d = st;
+
             d.Dispose();
+
+            
         }
     }
 
-    internal sealed class SimpleType : IDisposable
+    internal sealed class SimpleType : IDisposable,INewDispose
     {
-        public void Dispose() { Console.WriteLine("public Dispose"); }
-        void IDisposable.Dispose() { Console.WriteLine("IDisposable Dispose"); }
+        void INewDispose.Dispose()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IDisposable.Dispose()
+        {
+            throw new NotImplementedException();
+        }
+
+        // public void Dispose() { Console.WriteLine("public Dispose"); }
+
+
+        void Dispose() { Console.WriteLine("IDisposable Dispose"); }
+    }
+
+    interface INewDispose
+    {
+        void Dispose();
     }
 }

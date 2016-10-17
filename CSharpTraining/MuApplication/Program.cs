@@ -11,34 +11,31 @@ namespace MuApplication
         static void Main(string[] args)
         {
 
+            Point[][] myPolygons = new Point[3][];
 
-            Student student = new Student();
-            student.Name = "John";
-            student.Age = 23;
-            student.SpeakingLanguage = SpeakingLanguage.Hindi;
+            // myPolygons[0] refers to an array of 10 Point instances.
+            myPolygons[0] = new Point[10];
 
-            Nullable<int> count = new Nullable<int>();
-            count = 12;
+            // myPolygons[1] refers to an array of 20 Point instances.
+            myPolygons[1] = new Point[20];
+
+            // myPolygons[2] refers to an array of 30 Point instances.
+            myPolygons[2] = new Point[30];
+            
+
+            // Display the Points in the first polygon.
+            for (Int32 x = 0; x < myPolygons[0].Length; x++)
+                Console.WriteLine(myPolygons[0][x]);
 
 
         }
-     
+
     }
     
-    //English , Hindi , Marathi , Benagli
-
-    public class Student
+    public class Point
     {
-        public string Name;
-
-        public int Age;
-
-        public SpeakingLanguage SpeakingLanguage;
-
-    }
-
-    public enum SpeakingLanguage
-    {
-        English, Hindi, Marathi, Benagli
-    }
+        public int X;
+        public int Y;
+    }   
+    
 }

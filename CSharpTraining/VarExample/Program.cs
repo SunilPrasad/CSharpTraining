@@ -22,7 +22,7 @@ namespace VarExample
             // anon is compiled as an anonymous type
             var anon = new { Name = "Terry", Age = 34 };
 
-
+            
 
             // list is compiled as List<int>                             
             var list = new List<int>();

@@ -10,8 +10,11 @@ namespace NestedTypeExample
     {
         static void Main(string[] args)
         {
-            Container container = new Container("Name");
-            Container.Nested nestedClass = new Container.Nested(container);
+           // Container container = new Container("Name");
+
+          //  Container.Nested nestedClass = new Container.Nested(container);
+
+            Container.Nested nestedClass = new Container.Nested();
 
         }
     }
@@ -20,14 +23,24 @@ namespace NestedTypeExample
     {
         private string _name;
         public string Name { get; set; }
+        private Nested _nested;
+
         public Container(string name)
         {
             _name = name;
-            new Nested(this);            
+            _nested = new Nested(this);            
         }
+
+
         public class Nested
         {
             private Container parent;
+            private string _nestedName;
+
+            public Nested()
+            {
+
+            }
 
             public Nested(Container parent)
             {
