@@ -16,7 +16,7 @@ namespace LinqLetExample
             // of a nested from clause.
             var chrs = from str in strs
                        let chrArray = str.ToCharArray()
-                       from ch in chrArray                       
+                       from ch in chrArray
                        orderby ch                       
                        select ch;
 

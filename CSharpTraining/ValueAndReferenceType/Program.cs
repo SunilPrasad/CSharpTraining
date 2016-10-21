@@ -33,8 +33,8 @@ namespace ValueAndReferenceType
 
         private static void DoubleInt(out int a, out int b)
         {
-            //a = 20;
-            //b = 20;
+            a = 20;
+            b = 20;
 
             a += a;
             b += b;

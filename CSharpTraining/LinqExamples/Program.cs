@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,16 @@ namespace LinqExamples
         static void Main(string[] args)
         {
             FilterValuesWithWhere();
+
+            ArrayList arrayList = new ArrayList();
+
+            arrayList.Add(10);
+
+            arrayList.Add(-10);
+
+            var query = from int n in arrayList where n > 0 select n ;
+
+            query.ToList().ForEach(x=>Console.WriteLine(x));
         }
 
 
