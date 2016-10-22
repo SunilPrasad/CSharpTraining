@@ -15,7 +15,7 @@ namespace HashSetExample
     {
         static void Main(string[] args)
         {
-            //var hashSet = new HashSet<int>();
+            var another = new HashSet<int>() { 1, 2, 3 };
 
             // Initialize the set using object initialization syntax 
             var hashSet = new HashSet<int>() { 1, 2, 3 };
@@ -37,18 +37,30 @@ namespace HashSetExample
 
 
             //// Modify the set to include only the objects present in the set and the other set
-            //hashSet.IntersectWith(another);
+            hashSet.IntersectWith(another);
+            DisplaySet(hashSet);
+
 
             //// Remove all objects in "another" set from "hashSet" 
-            //hashSet.ExceptWith(another);
+            hashSet.ExceptWith(another);
+            DisplaySet(hashSet);
 
             //// Modify the set to include all objects included in itself, in "another" set, or both
-            //hashSet.UnionWith(another);
+            hashSet.UnionWith(another);
+            DisplaySet(hashSet);
 
             //var isSupersetOf = hashSet.IsSupersetOf(another);
             //var isSubsetOf = hashSet.IsSubsetOf(another);
             //var equals = hashSet.SetEquals(another);
 
+        }
+
+        private static void DisplaySet(HashSet<int> hasSet)
+        {
+            foreach (var i in hasSet)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 

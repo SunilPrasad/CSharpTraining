@@ -22,10 +22,10 @@ class TestCollectionsUtils
 
         SortedList population2 = CollectionsUtil.CreateCaseInsensitiveSortedList();
 
-        foreach (string city in population1.Keys)
-        {
-            population2.Add(city, population1[city]);
-        }
+        population2["Trapperville"] = 15;
+        population2["Doggerton"] = 230;
+        population2["New Hollow"] = 1234;
+        population2["McHenry"] = 185;
 
         // Select cities from the sorted list using mixed case.
         Console.WriteLine("\nCase insensitive sorted list results:\n");

@@ -15,12 +15,12 @@ namespace LinkListExample
         public static void Main()
         {
             // Create the link list.
-            string[] words =
-                { "the", "fox", "jumped", "over", "the", "dog" };
+            string[] words = { "the", "fox", "jumped", "over", "the", "dog" };
+
             LinkedList<string> sentence = new LinkedList<string>(words);
             Display(sentence, "The linked list values:");
-            Console.WriteLine("sentence.Contains(\"jumped\") = {0}",
-                sentence.Contains("jumped"));
+
+            Console.WriteLine("sentence.Contains(\"jumped\") = {0}", sentence.Contains("jumped"));
 
             // Add the word 'today' to the beginning of the linked list.
             sentence.AddFirst("today");

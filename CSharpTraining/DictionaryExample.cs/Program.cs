@@ -14,6 +14,8 @@ namespace DictionaryExample.cs
 
             Customer customer = new Customer();
 
+            customer.Id = 12345;
+
             dictionary.Add(customer.Id, customer);
 
 
@@ -33,8 +35,6 @@ namespace DictionaryExample.cs
 
             // Removing all objects
             dictionary.Clear();
-
-
 
 
             var count = dictionary.Count;

@@ -14,7 +14,7 @@ namespace ArrayPerformanceComp
 
             int[][] intJaggedArray = new int[10][];
 
-            intArray[0,0] = 10;
+            intArray[0, 0] = 10;
 
             Console.WriteLine(intArray[0, 0]);
 
@@ -22,7 +22,16 @@ namespace ArrayPerformanceComp
 
             intJaggedArray[0][0] = 20;
 
-            Console.WriteLine(intJaggedArray[0][0]);
+            for (var i = 0; i < 10; ++i)
+            {
+                for (var j = 0; j < 20; ++j)
+                {
+                    if(intArray.GetLength(i)>=i && intArray.GetLength(j) >=j)
+                   Console.WriteLine(intArray[i,j]);
+                }
+            }
+
+           // Console.WriteLine(intJaggedArray[0][0]);
         }
     }
 }
