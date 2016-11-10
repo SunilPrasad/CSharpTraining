@@ -10,59 +10,68 @@ namespace DictionaryExample.cs
     {
         static void Main(string[] args)
         {
-            var dictionary = new Dictionary<int, Customer>();
+           
+            Dictionary<Customer,string> dictionary = new Dictionary<Customer, string>(1000);
 
-            Customer customer = new Customer();
+            Customer one = new Customer(100);
 
-            customer.Id = 12345;
+            Customer two = new Customer(200);
 
-            dictionary.Add(customer.Id, customer);
+            Customer three = new Customer(100);
 
-
-            //             * var dictionary = new Dictionary<int, Customer>
-            //{
-            //     { customer1.Id, customer1 },
-            //     { customer2.Id, customer2 }
-            //}
-            //             * 
-            //             * 
-            //        }
-
-            var customer1 = dictionary[1234];
-
-            // Removing an object by its key
-            dictionary.Remove(1);
-
-            // Removing all objects
-            dictionary.Clear();
+            Customer four = one;
 
 
-            var count = dictionary.Count;
+            bool isEqual = one.Equals(three);
 
-            var containsKey = dictionary.ContainsKey(1);
+            Console.WriteLine(isEqual);
 
-            var containsValue = dictionary.ContainsValue(customer1);
 
-            // Iterate over keys 
-            foreach (var key in dictionary.Keys)
-                Console.WriteLine(dictionary[key]);
 
-            // Iterate over values
-            foreach (var value in dictionary.Values)
-                Console.WriteLine(value);
+            dictionary.Add(one, "emailIdOne");
 
-            // Iterate over dictionary
+            one.Id = 500;
+
+            dictionary.Add(one,"neOne");
+
+
+          //  dictionary.Add(three, "emailIdThree");
+
+           // dictionary.Add(four, "emailIdOne");
+
+            //dictionary.Add(two, "emailIdTwo");
+            //dictionary.Add(three, "emailIdThree");
+
             foreach (var keyValuePair in dictionary)
             {
-                Console.WriteLine(keyValuePair.Key);
-                Console.WriteLine(keyValuePair.Value);
+                Console.WriteLine(string.Format("{0}:{1}", keyValuePair.Key, keyValuePair.Value));
             }
+
+
         }
 
         public class Customer
         {
             public int Id { get; set; }
 
+            public Customer(int id)
+            {
+                Id = id;
+            }
+
+        }
+
+        public class CustomerCompare : IEqualityComparer<Customer>
+        {
+            public bool Equals(Customer x, Customer y)
+            {
+                return x.Id.Equals(y.Id);
+            }
+
+            public int GetHashCode(Customer obj)
+            {
+                return obj.Id.GetHashCode();
+            }
         }
 
     }

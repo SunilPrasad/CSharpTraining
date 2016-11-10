@@ -13,6 +13,8 @@ class TestCollectionsUtils
         population1["New Hollow"] = 1234;
         population1["McHenry"] = 185;
 
+        
+
         // Select cities from the table using mixed case.
         Console.WriteLine("Case insensitive hashtable results:\n");
         Console.WriteLine("{0}'s population is: {1}", "Trapperville", population1["trapperville"]);

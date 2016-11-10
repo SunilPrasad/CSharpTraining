@@ -22,12 +22,9 @@ namespace ArrayPerformanceComp
             InitSumRect(rectArray, NumRows, NumCols);
             InitSumJagged(jaggedArray, NumRows, NumCols);
 
-            //  Test(() => SimpleSumRect(rectArray, NumRows, NumCols), "Simple Sum rect", 10);
-            // Test(() => SimpleSumJagged(jaggedArray, NumRows, NumCols), "Simple Sum jagged", 10);
+            Test(() => SimpleSumRect(rectArray, NumRows, NumCols), "Simple Sum rect", 10);
+            Test(() => SimpleSumJagged(jaggedArray, NumRows, NumCols), "Simple Sum jagged", 10);
 
-            Test(() => OptimizedTraversalJagged(jaggedArray, NumRows, NumCols), "Simple Sum jagged", 100);
-            Test(() => OptimizedTraversalRect(rectArray, NumRows, NumCols), "Simple Sum rect", 100);
-            
         }
 
         private static void InitSumRect(byte[,] array, int rows, int cols)

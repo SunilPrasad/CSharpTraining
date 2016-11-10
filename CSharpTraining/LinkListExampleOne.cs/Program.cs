@@ -17,22 +17,19 @@ namespace LinkListExampleOne.cs
             //
             // First add three elements to the linked list.
             //
-            linked.AddLast("one");
-            linked.AddLast("two");
-            linked.AddLast("three");
+
             
-            //
-            // Insert a node before the second node (after the first node)
-            //
-            LinkedListNode<string> node = linked.Find("one");
-            linked.AddAfter(node, "inserted");
-            //
-            // Loop through the linked list.
-            //
-            foreach (var value in linked)
-            {
-                Console.WriteLine(value);
-            }
+            linked.AddLast("one");
+
+            linked.AddLast("two");
+
+            linked.AddLast("three");
+
+            var node = linked.Find("two");
+
+            linked.AddAfter(node, "Three");
+
+
         }
     }
 }

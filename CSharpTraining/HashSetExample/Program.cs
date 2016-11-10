@@ -15,10 +15,12 @@ namespace HashSetExample
     {
         static void Main(string[] args)
         {
-            var another = new HashSet<int>() { 1, 2, 3 };
+            var another = new HashSet<int>() { 3,1, 2, };
 
             // Initialize the set using object initialization syntax 
             var hashSet = new HashSet<int>() { 1, 2, 3 };
+
+            
 
             // Add an object to the set
             hashSet.Add(4);
@@ -51,7 +53,10 @@ namespace HashSetExample
 
             //var isSupersetOf = hashSet.IsSupersetOf(another);
             //var isSubsetOf = hashSet.IsSubsetOf(another);
-            //var equals = hashSet.SetEquals(another);
+
+            var equals = hashSet.SetEquals(another);
+
+            Console.WriteLine("Equal {0}",equals);
 
         }
 

@@ -23,10 +23,13 @@ namespace LinqGroupByExample
             foreach (var sites in webAddrs)
             {
                 Console.WriteLine("Web sites grouped by " + sites.Key);
+
                 foreach (var site in sites)
                     Console.WriteLine(" " + site);
                 Console.WriteLine();
             }
+
+            
         }
     }
 }

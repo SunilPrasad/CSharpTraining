@@ -10,17 +10,21 @@ namespace ListExample
     {
         static void Main(string[] args)
         {
-            List<int> listofInt = new List<int>();
+            List<int> listofInt = new List<int>(10);
 
-            for(int i=0;i<10;i++)
+            Console.WriteLine(listofInt.Capacity);
+
+            listofInt.Add(12);
+
+            Console.WriteLine(listofInt.Capacity);
+
+
+            for (int i = 0; i < 10; i++)
             {
-                listofInt.Add(10);
-                listofInt.Add(10);
-                listofInt.Add(10);
                 listofInt.Add(10);
 
                 Console.WriteLine(listofInt.Capacity);
-            }          
+            }
         }
     }
 }

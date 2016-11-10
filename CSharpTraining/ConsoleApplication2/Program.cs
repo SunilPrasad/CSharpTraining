@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,107 +9,92 @@ namespace ConsoleApplication2
 {
     class Program
     {
+
+        public static DateTime Created { get; set; } = DateTime.Now;
+
+        public override string ToString() => string.Format("{0}, {1}", "First", "Second");
+
+
         static void Main(string[] args)
         {
-            List<Shape> shapes = new List<Shape>();
+            MailManager mailManager = new MailManager();
 
-            Rectangle rectangle = new Rectangle();
-            rectangle.Height = 10;
-            rectangle.Width = 20;
+            Fax fax = new Fax(mailManager);
+            Mobile mobile = new Mobile(mailManager);
 
-            rectangle.LeftPosition = 0;
-            rectangle.TopPosition = 0;
-
-
-            Circle circle = new Circle();
-            circle.Height = 10;
-            circle.Width = 20;
-
-            circle.LeftPosition = 0;
-            circle.TopPosition = 0;
-
-            Traingle triangle = new Traingle();
-            triangle.Height = 10;
-            triangle.Width = 20;
-
-            triangle.LeftPosition = 0;
-            triangle.TopPosition = 0;
-
-            shapes.Add(rectangle);
-            shapes.Add(circle);
-            shapes.Add(triangle);
-
-            DrawAnyShape(shapes);
-
-
-            Rectangle rect = new Rectangle();
-            rect.Draw();
-
-            Add(12, 12);
-            Add("Hello", "World");            
-
-            
-        }
-
-        public static void DrawAnyShape(List<Shape> shapes)
-        {
-            foreach(var shape in shapes)
-            {
-                shape.Draw();
-            }
-        }
-
-        public static void Add(int a,int b)
-        {
+            mailManager.SimulateNewMail("SUnil", "Sunil", "Test");
 
         }
 
-        public static void Add(string a,string b)
-        {
-
-        }
+       
     }
 
-    public abstract class Shape
+
+    public class MailManager
     {
-        private int _internalPOstion;
-        public int LeftPosition { get; set; }
-        public int TopPosition { get; set; }
-        public int Height { get; set; }
-        public int Width { get; set; }
+        public event EventHandler<EmailEventArgs> OnNewMailArrived;
 
-        public virtual void Draw()
+        public void SimulateNewMail(string to,string from,string sub)
         {
-            Console.WriteLine("Drawing base");
+            OnNewMailArrived?.Invoke(this, new EmailEventArgs(to,@from,sub));
         }
-     
+
     }
 
-    public class Rectangle : Shape
+    public class Fax
     {
-        public override void Draw()
+        private MailManager _mailManager;
+
+        public Fax(MailManager mailManager)
         {
-            base.Draw();
-            Console.WriteLine("Drawing rectangle");
+            _mailManager = mailManager;
+            _mailManager.OnNewMailArrived += _mailManager_OnNewMailArrived;
+
+        }
+
+        private void _mailManager_OnNewMailArrived(object sender, EmailEventArgs e)
+        {
+            Console.WriteLine(e.From+e.To+e.Subject);
+
+            Console.WriteLine("Fax Received Email");
         }
     }
 
-    public class Circle : Shape
-    {      
-        public override void Draw()
-        {
-            base.Draw();
-            Console.WriteLine("Drawing Circle");
-        }
-    }
-
-
-    public class Traingle : Shape
+    public class Mobile
     {
-        public override void Draw()
+        private MailManager _mailManager;
+
+        public Mobile(MailManager mailManager)
         {
-            base.Draw();
-            Console.WriteLine("Drawing traingle");
+            _mailManager = mailManager;
+            _mailManager.OnNewMailArrived += _mailManager_OnNewMailArrived;
+
+        }
+
+        private void _mailManager_OnNewMailArrived(object sender, EmailEventArgs e)
+        {
+            Console.WriteLine("Mobile Received Email");
+        }
+
+        public void UnRegisterEmailNotification()
+        {
+            _mailManager.OnNewMailArrived -= _mailManager_OnNewMailArrived;
         }
     }
+
+    public class EmailEventArgs : EventArgs
+    {
+        
+        public EmailEventArgs(string to , string from,string sub)
+        {
+            From = from;
+            To = to;
+            Subject = sub;
+        }
+
+        public string From { get; }
+        public string To { get; }
+        public string Subject { get; }
+    }
+
 }

@@ -18,26 +18,48 @@ namespace StackExample.cs
 
         static void Main(string[] args)
         {
-            var stack = new Stack<string>();
+            WebBrowser webBrowser = new WebBrowser();
+            webBrowser.Browse("a.html");
+            webBrowser.Browse("b.html");
+            webBrowser.Browse("c.html");
+            webBrowser.Browse("d.html");
 
-            // Push items in a stack
-            stack.Push("http://www.google.com");
+            webBrowser.Back();
+            webBrowser.Back();
+            webBrowser.Back();
 
-            // Check to see if the stack contains a given item 
-            var contains = stack.Contains("http://www.google.com");
 
-            // Remove and return the item on the top of the stack
-            var top = stack.Pop();
+        }
 
-            // Return the item on the top of the stack without removing it 
-            top = stack.Peek();
 
-            // Get the number of items in stack 
-            var count = stack.Count;
+        public class WebBrowser
+        {
+            private Stack<string> _webpageStack;
+            private string _cussrentPage;
 
-            // Remove all items from stack 
-            stack.Clear();
+            public WebBrowser()
+            {
+                _webpageStack=new Stack<string>(10);
+            }
 
+            public void Browse(string url)
+            {
+                Console.WriteLine("Visting page {0} : ",url);
+                _cussrentPage = url;
+                _webpageStack.Push(url);
+            }
+
+            public void Back()
+            {
+                var page = _webpageStack.Pop();
+
+                if (page.Equals(_cussrentPage))
+                {
+                    page = _webpageStack.Pop();
+                }
+
+                Console.WriteLine("Back to page {0}:",page);
+            }
         }
     }
 }
