@@ -16,8 +16,11 @@ namespace LinqGroupByExample
 
             // Create a query that groups websites by top-level domain name.
             var webAddrs = from addr in websites
-                           where addr.LastIndexOf('.') != -1
-                           group addr by addr.Substring(addr.LastIndexOf('.'));
+                where addr.LastIndexOf('.') != -1
+                group addr by addr.Substring(addr.LastIndexOf('.'));
+               // into adgroup ;
+                //where adgroup.Count() > 2
+                //select adgroup;
 
             // Execute the query and display the results.
             foreach (var sites in webAddrs)
@@ -25,10 +28,11 @@ namespace LinqGroupByExample
                 Console.WriteLine("Web sites grouped by " + sites.Key);
 
                 foreach (var site in sites)
+                {
                     Console.WriteLine(" " + site);
+                }
                 Console.WriteLine();
             }
-
             
         }
     }

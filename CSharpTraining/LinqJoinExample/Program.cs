@@ -43,6 +43,7 @@ namespace LinqJoinExample
             new Product {Name = "Bok Choy", CategoryID = 003},
             new Product {Name = "Peaches", CategoryID = 005},
             new Product {Name = "Melons", CategoryID = 005},
+            new Product {Name = "MelonsNone", CategoryID = 006}
         };
 
         #endregion
@@ -52,8 +53,8 @@ namespace LinqJoinExample
         {
             JoinDemonstration app = new JoinDemonstration();
 
-            // app.GroupJoin1();
-            app.InnerJoin();
+             app.GroupJoin1();
+          //  app.InnerJoin();
             app.GroupJoin();
             // app.GroupInnerJoin();
             // app.GroupJoin3();
@@ -139,7 +140,7 @@ namespace LinqJoinExample
                 foreach (var item in prodGrouping)
                 {
                     totalItems++;
-                    Console.WriteLine("   {0,-10}{1}", item.Name, item.ID);
+                    Console.WriteLine("   {0,-10} {1}", item.Name, item.ID);
                 }
             }
             Console.WriteLine("Unshaped GroupJoin: {0} items in {1} unnamed groups", totalItems, groupJoinQuery.Count());

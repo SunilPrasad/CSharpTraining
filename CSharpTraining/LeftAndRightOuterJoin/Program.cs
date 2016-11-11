@@ -34,11 +34,11 @@ namespace LeftAndRightOuterJoin
             var Ljoin = from emp in ListOfEmployees
                 join proj in ListOfProject
                 on emp.ProjectID equals proj.ProjectID into JoinedEmpDept
-                from proj in JoinedEmpDept.DefaultIfEmpty()
+                from proj1 in JoinedEmpDept.DefaultIfEmpty()
                 select new
                 {
                     EmployeeName = emp.Name,
-                    ProjectName = proj != null ? proj.ProjectName : null
+                    ProjectName = proj1 != null ? proj1.ProjectName : null
                 };
 
             //Right outer join
@@ -52,14 +52,14 @@ namespace LeftAndRightOuterJoin
                 };
 
             //Printing result of left join
-            //Console.WriteLine(string.Join("\n", Ljoin.Select(emp => " Employee Name = " +
-            //                                                        emp.EmployeeName + ", Project Name = " +
-            //                                                        emp.ProjectName).ToArray<string>()));
-
-            //printing result of right outer join
-            Console.WriteLine(string.Join("\n", RJoin.Select(emp => " Employee Name = " +
+            Console.WriteLine(string.Join("\n", Ljoin.Select(emp => " Employee Name = " +
                                                                     emp.EmployeeName + ", Project Name = " +
                                                                     emp.ProjectName).ToArray<string>()));
+
+            //printing result of right outer join
+            //Console.WriteLine(string.Join("\n", RJoin.Select(emp => " Employee Name = " +
+            //                                                        emp.EmployeeName + ", Project Name = " +
+            //                                                        emp.ProjectName).ToArray<string>()));
 
             Console.ReadLine();
 
