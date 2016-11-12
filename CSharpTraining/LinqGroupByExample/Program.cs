@@ -18,6 +18,9 @@ namespace LinqGroupByExample
             var webAddrs = from addr in websites
                 where addr.LastIndexOf('.') != -1
                 group addr by addr.Substring(addr.LastIndexOf('.'));
+
+
+
                // into adgroup ;
                 //where adgroup.Count() > 2
                 //select adgroup;

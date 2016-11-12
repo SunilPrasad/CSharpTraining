@@ -17,6 +17,7 @@ namespace LeftAndRightOuterJoin
 
             // Employee List
             List<Employee> ListOfEmployees = new List<Employee>();
+
             ListOfEmployees.AddRange((new Employee[]
             {
                 new Employee() {ID = 1, Name = "John", ProjectID = 1},
@@ -30,8 +31,27 @@ namespace LeftAndRightOuterJoin
             List<Project> ListOfProject = new List<Project>();
             ListOfProject.AddRange(new Project[] {P1, P2, P3,P4});
 
-            //Left join
-            var Ljoin = from emp in ListOfEmployees
+
+            //Group Join
+            var groupjoin = from emp in ListOfEmployees
+                join proj in ListOfProject
+                on emp.ProjectID equals proj.ProjectID into JoinedEmpDept
+                select JoinedEmpDept.DefaultIfEmpty();
+
+
+            foreach (var group in groupjoin)
+            {
+                Console.WriteLine("Group :");
+
+                foreach (var project in group)
+                {
+                    Console.WriteLine(project.ProjectName);
+                }
+            }
+
+
+                //Left join
+                var Ljoin = from emp in ListOfEmployees
                 join proj in ListOfProject
                 on emp.ProjectID equals proj.ProjectID into JoinedEmpDept
                 from proj1 in JoinedEmpDept.DefaultIfEmpty()
@@ -63,6 +83,11 @@ namespace LeftAndRightOuterJoin
 
             Console.ReadLine();
 
+        }
+
+        private static void GroupJoin()
+        {
+            
         }
 
     }

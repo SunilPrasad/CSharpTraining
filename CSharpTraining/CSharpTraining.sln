@@ -193,6 +193,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondaryConstraint", "Seco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqGroupJoinExample", "LinqGroupJoinExample\LinqGroupJoinExample.csproj", "{A52917D1-48DC-4AD7-9761-D3005949EFBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqDistinctExample", "LinqDistinctExample\LinqDistinctExample.csproj", "{F3466FE5-88D4-42FF-B7F1-8B7002B77BE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -529,6 +531,10 @@ Global
 		{A52917D1-48DC-4AD7-9761-D3005949EFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A52917D1-48DC-4AD7-9761-D3005949EFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A52917D1-48DC-4AD7-9761-D3005949EFBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3466FE5-88D4-42FF-B7F1-8B7002B77BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3466FE5-88D4-42FF-B7F1-8B7002B77BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3466FE5-88D4-42FF-B7F1-8B7002B77BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3466FE5-88D4-42FF-B7F1-8B7002B77BE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -615,5 +621,6 @@ Global
 		{5F2C5AB1-3B4E-4834-BADD-4F51501601EB} = {E5B7E6C5-6031-4EE2-8E68-E7D97366F287}
 		{B1F80CE8-42C0-4EFA-B973-4F0363BF8827} = {E5B7E6C5-6031-4EE2-8E68-E7D97366F287}
 		{A52917D1-48DC-4AD7-9761-D3005949EFBB} = {9D792D46-FC07-41CB-8AE7-0E5B0055A05D}
+		{F3466FE5-88D4-42FF-B7F1-8B7002B77BE2} = {9D792D46-FC07-41CB-8AE7-0E5B0055A05D}
 	EndGlobalSection
 EndGlobal

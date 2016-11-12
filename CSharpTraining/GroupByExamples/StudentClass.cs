@@ -176,6 +176,8 @@ namespace GroupByExamples
                 Console.WriteLine("Key: {0}", studentGroup.Key);
                 // Nested foreach is required to access group items.
 
+                IGrouping<>
+
                 foreach (var student in studentGroup)
                 {
                     Console.WriteLine("\t{0}, {1}", student.LastName, student.FirstName);

@@ -11,7 +11,7 @@ namespace SecondaryConstraint
     {
         static void Main(string[] args)
         {
-
+            TypeConstraint<DerivedStream,MyStream> typeConstraint = new TypeConstraint<DerivedStream, MyStream>();
         }
     }
 
@@ -21,6 +21,26 @@ namespace SecondaryConstraint
         {
             
         }
+    }
+
+    public class TypeConstraint<T, U> where T : MyStream, U
+    {
+        
+    }
+
+    public class MyStream 
+    {
+        
+    }
+
+    public class DerivedStream : MyStream
+    {
+        
+    }
+
+    public class NewStream : MyStream
+    {
+        
     }
 }
 

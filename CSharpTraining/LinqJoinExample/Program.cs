@@ -68,6 +68,7 @@ namespace LinqJoinExample
 
         void InnerJoin()
         {
+
             // Create the query that selects 
             // a property from each element.
             var innerJoinQuery =

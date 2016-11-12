@@ -13,14 +13,12 @@ namespace NestedForExample
             char[] chrs = { 'A', 'B', 'C' };
             char[] chrs2 = { 'X', 'Y', 'Z' };
 
-            var pairs = from ch1 in chrs
-                        from ch2 in chrs2
-                        select new { First = ch1, Second = ch2 };
 
-            foreach(var p in pairs)
-            {
-                Console.WriteLine($"{p.First } { p.Second}");
-            }
+            var pairs = from ch1 in chrs
+                from ch2 in chrs2
+                group ch1 by ch1;
+
+           
         }
     }
 }

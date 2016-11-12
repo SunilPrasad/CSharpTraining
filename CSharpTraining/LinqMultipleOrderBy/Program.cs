@@ -28,9 +28,14 @@ namespace LinqMultipleOrderBy
             // Create a query that obtains the accounts in sorted order.
             // Sorting first by last name, then within same last names sorting by
             // by first name, and finally by account balance.
+
+
             var accInfo = from acc in accounts
                           orderby acc.LastName, acc.FirstName, acc.Balance
                           select acc;
+
+
+
 
             // Execute the query and display the results.
             foreach (Account acc in accInfo)
