@@ -10,7 +10,9 @@ namespace ConstructorConstraint
     {
         static void Main(string[] args)
         {
+            ConstructorConstraint<int> prod = new ConstructorConstraint<int>();
 
+            ConstructorConstraint<Product> prod1 = new ConstructorConstraint<Product>();
         }
     }
 
@@ -23,6 +25,15 @@ namespace ConstructorConstraint
             // the constraint requires that any specified reference
             // type also have a public, parameterless constructor
             return new T();
+        }
+    }
+
+    public class Product
+    {
+        private string name;
+        public Product()
+        {
+            this.name = name;
         }
     }
 }

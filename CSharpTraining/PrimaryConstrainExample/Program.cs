@@ -11,7 +11,13 @@ namespace PrimaryConstrainExample
     {
         static void Main(string[] args)
         {
+         
         }
+    }
+
+    public class Prod
+    {
+        
     }
 
     internal sealed class PrimaryConstraintOfStream<T> where T : Stream
@@ -24,9 +30,10 @@ namespace PrimaryConstrainExample
 
     internal sealed class PrimaryConstraintOfClass<T> where T : class
     {
-        public void M()
+        public void  M()
         {
             T temp = null;// Allowed because T must be a reference type
+
         }
     }
 
@@ -34,9 +41,10 @@ namespace PrimaryConstrainExample
     {
         public static T Factory()
         {
+            
             // Allowed because all value types implicitly
             // have a public, parameterless constructor
-           return new T();
+            return new T();
         }
     }
 }

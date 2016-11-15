@@ -15,7 +15,7 @@ namespace SecondaryConstraint
         }
     }
 
-    internal sealed class SecondaryConstraintOfStream<T> where T : Stream, IEnumerable<T>, new()
+    internal sealed class SecondaryConstraintOfStream<T> where T : Stream, IEnumerable<T>,IComparable<T>
     {
         public void M(T stream)
         {
@@ -23,7 +23,7 @@ namespace SecondaryConstraint
         }
     }
 
-    public class TypeConstraint<T, U> where T : MyStream, U
+    public class TypeConstraint<T, U> where T : U
     {
         
     }

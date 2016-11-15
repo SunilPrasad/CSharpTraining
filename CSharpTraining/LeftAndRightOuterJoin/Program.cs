@@ -39,16 +39,20 @@ namespace LeftAndRightOuterJoin
                 select JoinedEmpDept.DefaultIfEmpty();
 
 
-            foreach (var group in groupjoin)
-            {
-                Console.WriteLine("Group :");
+            //foreach (var group in groupjoin)
+            //{
+            //    Console.WriteLine("Group :");
 
-                foreach (var project in group)
-                {
-                    Console.WriteLine(project.ProjectName);
-                }
-            }
+            //    foreach (var project in group)
+            //    {
+            //        if (project != null)
+            //        {
+            //            Console.WriteLine(project.ProjectName);
+            //        }
+            //    }
+            //}
 
+            //Console.WriteLine(" ---");
 
                 //Left join
                 var Ljoin = from emp in ListOfEmployees
