@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Threading;
 using Timers = System.Timers;
 
@@ -8,18 +9,22 @@ namespace ThreadPriorityExample
     {
         static void Main()
         {
+            using (Process p = Process.GetCurrentProcess())
+                p.PriorityClass = ProcessPriorityClass.High;
+
             PriorityTest priorityTest = new PriorityTest();
 
             Thread thread1 = new Thread(priorityTest.ThreadMethod);
             thread1.Name = "ThreadOne";
+            thread1.Priority=ThreadPriority.Highest;
 
             Thread thread2 = new Thread(priorityTest.ThreadMethod);
             thread2.Name = "ThreadTwo";
-            thread2.Priority = ThreadPriority.BelowNormal;
+            thread2.Priority = ThreadPriority.Lowest;
 
             Thread thread3 = new Thread(priorityTest.ThreadMethod);
             thread3.Name = "ThreadThree";
-            thread3.Priority = ThreadPriority.AboveNormal;
+            thread3.Priority = ThreadPriority.BelowNormal;
 
             thread1.Start();
             thread2.Start();

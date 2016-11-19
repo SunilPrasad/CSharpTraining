@@ -8,7 +8,7 @@ public static class Program
         // Create a new thread (defaults to foreground)
         Thread t = new Thread(Worker);
         // Make the thread a background thread
-       // t.IsBackground = true;
+        t.IsBackground = true;
         t.Start(); // Start the thread
         // If t is a foreground thread, the application won't die for about 10 seconds
         // If t is a background thread, the application dies immediately
