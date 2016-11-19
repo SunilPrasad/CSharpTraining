@@ -12,15 +12,17 @@ namespace AssemblyLoadExample
         static void Main(string[] args)
         {
             string assemblyName = "WebServices";
-
            
+            
 
             Assembly webServiceAsm = Assembly.Load(assemblyName);
             Console.WriteLine(webServiceAsm.FullName);
 
-            string assemblyPath = @"D:\MyWorkspace\CSharpTraining\CSharpTraining\WebServices\bin\Debug\WebServices.dll";
-            Assembly webServiceAssembly =  Assembly.LoadFrom(assemblyPath);
-            Console.WriteLine(webServiceAssembly.FullName);
+            Type [] publicType =  webServiceAsm.GetExportedTypes();
+
+
+
+
         }
     }
 }

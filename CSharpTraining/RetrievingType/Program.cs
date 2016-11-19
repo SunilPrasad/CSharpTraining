@@ -10,10 +10,16 @@ namespace RetrievingType
     {
         static void Main(string[] args)
         {
-            object[] values = { "word", true, 120, 136.34, 'a' };
+            object[] values = { "word", true, 120, 136.34, 'a',new Employee() };
+
+
             foreach (var value in values)
-                Console.WriteLine("{0} - type {1}", value,
-                                  value.GetType().Name);
+                Console.WriteLine("{0} - type {1}", value,value.GetType().Name);
         }
+    }
+
+    public class Employee
+    {
+        
     }
 }

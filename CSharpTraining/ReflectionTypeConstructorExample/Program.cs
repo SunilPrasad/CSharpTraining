@@ -23,6 +23,7 @@ namespace ReflectionTypeConstructorExample
                 Console.Write(" " + t.Name + "(");
                 // Display parameters.
                 ParameterInfo[] pi = c.GetParameters();
+
                 for (int i = 0; i < pi.Length; i++)
                 {
                     Console.Write(pi[i].ParameterType.Name + " " + pi[i].Name);

@@ -15,7 +15,7 @@ namespace ReflectionGetMethodsExample
 
             Type proximitySensorType = typeof(ProximitySensor);
 
-            var methods = proximitySensorType.GetMethods(BindingFlags.Instance | BindingFlags.NonPublic);
+            var methods = proximitySensorType.GetMethods();
 
             foreach (var methodInfo in methods)
             {

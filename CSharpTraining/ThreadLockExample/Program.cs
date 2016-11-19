@@ -1,49 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
+
 
 namespace ThreadLockExample
 {
     class Program
     {
-        public static int sum = 0;
-        static void Main(string[] args)
+        private static int total;
+        private static int[] inputs = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+        public static void Main()
         {
-            Thread threadOne = new Thread(Add);
-            Thread threadTwo = new Thread(Subtract);
-            Thread threadTThree = new Thread(Add);
-            Thread threadTThree1 = new Thread(Add);
+            Thread[] threadArray = new Thread[10];
 
+            for (int i = 0; i < threadArray.Length; i++)
+            {
+                threadArray[i] = new Thread(ThreadUnsafe.Go);
+                threadArray[i].Start();
+               // threadArray[i].Join();
+            }
 
-            threadOne.Start();
-            threadTwo.Start();
-            //threadTThree.Start();
-            //threadTThree1.Start();
+            Console.WriteLine(total);
 
-            Console.ReadLine();
-
-            Console.WriteLine(sum);
         }
 
-        private static void  Add()
+        public static void Sum()
         {
-            for (int i = 0; i < 500; i++)
+            Console.WriteLine("Runnning thread {0}",Thread.CurrentThread.ManagedThreadId);
+
+            foreach (var input in inputs)
             {
-                sum = sum + 1;
-                sum = sum + 1;
+                total = total + input;
+                Thread.Sleep(10);
             }
         }
 
-        private static void Subtract()
+    }
+
+    public class ThreadUnsafe
+    {
+        static int val1, val2;
+
+        public static void Go()
         {
-            for (int i = 0; i < 500; i++)
-            {
-                sum = sum - 1;
-                sum = sum - 1;
-            }
+            Console.WriteLine("Runnning thread {0}", Thread.CurrentThread.ManagedThreadId);
+
+            if (val2 != 0) Console.WriteLine(val1 / val2);
+            val2 = 0;
         }
     }
+
 }
+
+    

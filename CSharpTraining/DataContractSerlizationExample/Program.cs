@@ -44,8 +44,11 @@ namespace DataContractSerializerExample
             Person p1 = new Person("Zighetti", "Barbara", 101);
 
             FileStream writer = new FileStream(fileName, FileMode.Create);
+
             DataContractSerializer ser = new DataContractSerializer(typeof(Person));
+
             ser.WriteObject(writer, p1);
+
             writer.Close();
         }
 

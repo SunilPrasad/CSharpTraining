@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +11,7 @@ namespace OnDeserializedExample
     {
         public static void Main()
         {
-
+            
         }
     }
 
@@ -26,6 +27,12 @@ namespace OnDeserializedExample
         {
             m_radius = radius;
             m_area = Math.PI*m_radius*m_radius;
+        }
+
+        [OnDeserialized]
+        private void OnDeserialized(StreamingContext context)
+        {
+            m_area = Math.PI * m_radius * m_radius;
         }
     }
 

@@ -11,7 +11,7 @@ namespace TaskExample
         static void Main(string[] args)
         {
             
-            Task<Int32> t = new Task<Int32>(n => Sum((Int32)n), 10000);
+            Task<Int32> t = new Task<Int32>(() => Sum(10000));
             
             t.Start();
             

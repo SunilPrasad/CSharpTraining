@@ -1,9 +1,15 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Threading;
 
 namespace ConsoleApplication2
 {
@@ -11,21 +17,12 @@ namespace ConsoleApplication2
     {
         static void Main()
         {
-            int[] nums = {1, 2, 3, 4, 50, 6, 7, 18, 9, 10};
-
-            var evenNums = 
-                from  n in nums
-                orderby n
-                select n;
-
-
-
-            foreach (var evenNum in evenNums)
-            {
-                Console.WriteLine(evenNum);
-            }
+           
+            Console.WriteLine(Thread.CurrentThread.IsBackground);
             
         }
     }
-    
+
+  
+
 }

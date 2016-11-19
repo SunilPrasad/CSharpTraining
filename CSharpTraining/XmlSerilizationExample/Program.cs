@@ -34,10 +34,13 @@ namespace XmlSerilizationExample
         }
     }
 
+    [XmlRoot("Address")]
     public class AddressDetails
     {
+        [XmlElement("HouseNumer")]
         public int HouseNo { get; set; }
         public string StreetName { get; set; }
+        [XmlAttribute]
         public string City { get; set; }
         private string PoAddress { get; set; }
     }

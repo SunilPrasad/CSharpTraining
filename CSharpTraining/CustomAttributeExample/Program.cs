@@ -54,10 +54,14 @@ namespace CustomAttributeExample
         {
             get { return level; }
         }
+
+        public string Review;
+
+        public string NewName;
     }
 
 
-    [TestClass("Name", "Unit")]
+    [TestClass("Name", "Unit",NewName = "", Review = "")]
     public class CalculatorTests
     {
         public void TestSum()
